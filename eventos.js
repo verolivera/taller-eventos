@@ -8,5 +8,6 @@ divSaludo.addEventListener("click", () => {
 btn.onclick = saludo;
 
 function saludo(){
+    event.stopPropagation();
     alert('Hola!');
     }
